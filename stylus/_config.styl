@@ -31,6 +31,20 @@ color-secondary = scorpion
 color-accent = sunglow
 color-shadow = rgba(black, .2)
 
+// Color palette modifiers nested objects
+palettes = {
+  gray: {
+    light: lighten(gray, 12%),
+    base: gray,
+    dark: darken(gray, 8%)
+    },
+  atlantis: {
+    light: lighten(atlantis, 12%),
+    base: atlantis,
+    dark: darken(atlantis, 8%)
+  }
+}
+
 // UI colors
 ui-colors = { //Hashes like js objects 
   default: cerulean,
