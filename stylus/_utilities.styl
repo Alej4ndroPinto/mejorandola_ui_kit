@@ -2,10 +2,14 @@
 
 // Import if google fonts url is defined
 if font-url--google is defined
-	@import url(font-url--google)
+  @import url(font-url--google)
 
 // Calculate em values
 em(target, context = base__font-size) 
-	unit(target/context, 'em') // convierte las unidades px a em
+  unit(target/context, 'em') // convert px a em
 
-// Mixins
+  // Mixins
+bg-colors(hash) 
+  for key, value in hash //iterating an object(hash)
+    &--{key} // interpolation, print the value in the selector
+      background value
