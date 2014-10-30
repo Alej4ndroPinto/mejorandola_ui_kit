@@ -1,8 +1,23 @@
-.sige-logo
-  margin 0 0 2em 0
+.site-logo
+  margin: 0 0 2em 0
+  img-replace("mejorandolaicon.png", 77px, 77px, inline-block)
 
 .btn,
 .progbar,
 .tooltip
   bg-colors(ui-colors)
+  
+.icn-toggle 
+  +p-el(before, 25px, 3px) // Include the mixin with a block of code with '+'' prefix
+    background: palettes['gray'].base
+    top: 7px
+    
+  border-bottom: solid 3px palettes['gray'].base
+  border-top: solid 3px palettes['gray'].base
+  display: inline-block
+  height: 17px
+  position: relative
+  width: 25px
+
+
 

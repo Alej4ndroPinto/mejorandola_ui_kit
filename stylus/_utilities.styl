@@ -8,10 +8,23 @@ if font-url--google is defined
 em(target, context = base__font-size) 
   unit(target/context, 'em') // convert px a em
 
-  // Mixins
+// Mixins
 bg-colors(hash) 
   for key, value in hash //iterating an object(hash)
     &--{key} // interpolation, print the value in the selector
-      background value
+      background: value
 
+img-replace(img, w, h, disp = block)
+  background: url(path--rel + "/" + img) no-repeat 
+  background-size: cover
+  display: disp
+  height: h
+  width: w
+
+p-el(el, width = auto, height = auto)
+  &:{el}
+    @extend $pseudos
+    height: height
+    width: width
+    {block} // Include a block of code to this mixin
 
