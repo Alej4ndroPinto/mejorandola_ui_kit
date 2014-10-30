@@ -1,0 +1,30 @@
+.nav
+  font-size: 0
+  margin-top: em(20px)
+  margin-bottom: em(30px)
+  padding:0 
+
+  &__item 
+    display: inline-block
+    margin: .5px 
+
+    &:first-child a
+      border-radius: 4px 0 0 4px
+
+    &:last-child a
+      border-radius: 0 4px 4px 0
+    a
+      background: palettes['atlantis'].base
+      border-bottom: 1px solid transparent
+      color: white
+      display: block
+      font-size: 14px
+      font-weight: font-weight--light
+      padding: 1em 2.5em
+      text-decoration: none
+      transition all .3s ease
+      &:hover
+        background: palettes['atlantis'].dark
+
+    &--current a
+        background: palettes['atlantis'].dark

@@ -1,3 +1,6 @@
+.hidden {
+  display: none !important;
+}
 .srt {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -204,7 +207,7 @@ header {
   text-align: center;
 }
 h1 {
-  color: #8cbf36;
+  color: #7aa62f;
   font-size: 2.625em;
   font-weight: 300;
   line-height: 1.095238095238095px;
@@ -262,4 +265,37 @@ h2 {
   width: 25px;
   background: #909090;
   top: 7px;
+}
+.nav {
+  font-size: 0;
+  margin-top: 1.25em;
+  margin-bottom: 1.875em;
+  padding: 0;
+}
+.nav__item {
+  display: inline-block;
+  margin: 0.5px;
+}
+.nav__item:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.nav__item:last-child a {
+  border-radius: 0 4px 4px 0;
+}
+.nav__item a {
+  background: #97c941;
+  border-bottom: 1px solid transparent;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 1em 2.5em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav__item a:hover {
+  background: #7aa62f;
+}
+.nav__item--current a {
+  background: #7aa62f;
 }
