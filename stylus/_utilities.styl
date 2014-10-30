@@ -22,9 +22,14 @@ img-replace(img, w, h, disp = block)
   width: w
 
 p-el(el, width = auto, height = auto)
-  &:{el}
-    @extend $pseudos
-    height: height
-    width: width
-    {block} // Include a block of code to this mixin
+  
+  if el == "after" or el == "before"
+    &:{el}
+      @extend $pseudos
+      height: height
+      width: width
+      {block} // Include a block of code to this mixin
+      
+  else 
+    error('Invalid pseudoelement: ' + el) // Stylus error reporting to console
 
