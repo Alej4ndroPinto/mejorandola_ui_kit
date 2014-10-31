@@ -6,7 +6,7 @@
   margin-top: em(20px)
   padding: 0 
 
-  &__item 
+  +element(item)
     display: inline-block
     margin: 0 .5px 
 
@@ -17,7 +17,6 @@
       border-radius: 0 4px 4px 0
     a
       background: palettes['atlantis'].base
-      border-bottom: 1px solid transparent
       color: white
       display: block
       font-size: 14px
@@ -28,5 +27,6 @@
       &:hover
         background: palettes['atlantis'].dark
 
-    &--current a
+    +modifier(current) 
+      a
         background: palettes['atlantis'].dark

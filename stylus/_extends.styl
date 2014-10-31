@@ -3,16 +3,21 @@
 // Buttons
 $btn
   border-radius: br--default
-  border: 0
+  border-bottom: 3px solid red
   color: white !important
   display: inline-block
   font-size: em(14px)
   font-weight: font-weight--normal
-  padding: 1rem 2rem
+  padding: 1rem 2rem 13px 2rem
   text-transform: uppercase
-  transition: opacity trns-duration ease
+  transition: border-color trns-duration, opacity trns-duration
   
   &:hover
+    border-color: transparent
     opacity: .75
+    
+
+    
+    
   
   

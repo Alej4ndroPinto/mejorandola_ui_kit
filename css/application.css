@@ -211,7 +211,7 @@ body {
   font-size: 16px;
 }
 button {
-  ouline: 0;
+  outline: 0;
 }
 header {
   padding: 3em 0;
@@ -242,16 +242,17 @@ textarea {
 }
 [class^="btn--"] {
   border-radius: 4px;
-  border: 0;
+  border-bottom: 3px solid #f00;
   color: #fff !important;
   display: inline-block;
   font-size: 0.875em;
   font-weight: 400;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 13px 2rem;
   text-transform: uppercase;
-  transition: opacity 0.3s ease;
+  transition: border-color 0.3s, opacity 0.3s;
 }
 [class^="btn--"]:hover {
+  border-color: transparent;
   opacity: 0.75;
 }
 .container {
@@ -283,18 +284,23 @@ textarea {
 }
 .btn--default {
   background: #08abee;
+  border-bottom: 3px solid #0689be;
 }
 .btn--success {
   background: #97c941;
+  border-bottom: 3px solid #7aa62f;
 }
 .btn--error {
   background: #d01452;
+  border-bottom: 3px solid #a61042;
 }
 .btn--warning {
   background: #fcc33c;
+  border-bottom: 3px solid #f6ae04;
 }
 .btn--info {
   background: #9e1f70;
+  border-bottom: 3px solid #7e195a;
 }
 .nav {
   font-size: 0;
@@ -314,7 +320,6 @@ textarea {
 }
 .nav__item a {
   background: #97c941;
-  border-bottom: 1px solid transparent;
   color: #fff;
   display: block;
   font-size: 14px;

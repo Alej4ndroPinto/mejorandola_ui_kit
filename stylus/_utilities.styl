@@ -9,10 +9,12 @@ em(target, context = base__font-size)
   unit(target/context, 'em') // convert px a em
 
 // Mixins
+  
 bg-colors(hash) 
   for key, value in hash //iterating an object(hash)
     &--{key} // interpolation, print the value in the selector
       background: value
+      border-bottom: 3px solid darken(value, 20%)
 
 img-replace(img, w, h, disp = block)
   background: url(path--rel + "/" + img) no-repeat 
@@ -32,3 +34,14 @@ p-el(el, width = auto, height = auto)
       
   else 
     error('Invalid pseudoelement: ' + el) // Stylus error reporting to console
+
+// BEM slectors
+
+element(ele-name)
+  &__{ele-name}
+    {block}
+    
+modifier(mod-name)
+ &--{mod-name}
+    {block}
+  
