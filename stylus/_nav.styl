@@ -13,9 +13,8 @@
     * writing element class and modifier class in our markup this would be too long
     */
       
-    // @extend $nav-item-display
-    display: inline-block
-    margin: 0 .5px 
+    & // A little bit tricky with stylus... at the moment we need to put & in order to get work
+      @extend $nav-item-display
 
     &:first-child a
       border-radius: 4px 0 0 4px
@@ -23,14 +22,8 @@
     &:last-child a
       border-radius: 0 4px 4px 0
     a
-      background: palettes['atlantis'].base
-      color: white
-      display: block
-      font-size: 14px
-      font-weight: font-weight--light
-      padding: .9em 2.5em
-      text-decoration: none
-      transition all trns-duration ease
+      @extends $nav-item-link
+      background: palettes['atlantis'].base // Ez to modify the color here not in the placeholder
       &:hover
         background: palettes['atlantis'].dark
 

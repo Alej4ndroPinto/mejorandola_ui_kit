@@ -255,6 +255,19 @@ textarea {
   border-color: transparent;
   opacity: 0.75;
 }
+.nav__item {
+  display: inline-block;
+  margin: 0 0.5px;
+}
+.nav__item a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.9em 2.5em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 .container {
   max-width: 62.5em;
   margin: 0 auto;
@@ -308,15 +321,6 @@ textarea {
   margin-top: 1.25em;
   padding: 0;
 }
-.nav__item {
-/*
-    * The best practice is to have place holdres for base styles 
-    * especially with modifiers in order to prevent 
-    * writing element class and modifier class in our markup this would be too long
-    */
-  display: inline-block;
-  margin: 0 0.5px;
-}
 .nav__item:first-child a {
   border-radius: 4px 0 0 4px;
 }
@@ -325,13 +329,6 @@ textarea {
 }
 .nav__item a {
   background: #97c941;
-  color: #fff;
-  display: block;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 0.9em 2.5em;
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 .nav__item a:hover {
   background: #7aa62f;
