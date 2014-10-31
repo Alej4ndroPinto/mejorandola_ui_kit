@@ -309,6 +309,11 @@ textarea {
   padding: 0;
 }
 .nav__item {
+/*
+    * The best practice is to have place holdres for base styles 
+    * especially with modifiers in order to prevent 
+    * writing element class and modifier class in our markup this would be too long
+    */
   display: inline-block;
   margin: 0 0.5px;
 }
