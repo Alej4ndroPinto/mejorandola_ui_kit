@@ -1,23 +1,50 @@
 // Base styles
 
+a
+  color: palettes["atlantis"].base
+  text-decoration: none
+  &:hover
+    color: palettes["atlantis"].dark
+
 body 
+  background: bg-color
+  color: palettes["ebony-clay"].base
   font-family: font-family--primary
   font-size: base__font-size
-  line-height: (base__line/base__font-size)
+  //line-height: (base__line/base__font-size)
+    
+button
+  ouline: 0
 
 header 
   padding: em(48px) 0
   text-align: center
   
 h1
-  color: palettes["atlantis"].dark //hash getter like js objects
-  font-size: em(42px)
+  color: palettes["gray"].dark //hash getter like js objects
+  //font-size: em(42px)
   font-weight: font-weight--light
   line-height: (46px/42px)
   margin-bottom: em(70px, 42px)
   
 h2
   color: palettes['gray'].base
-  font-family: font-family--secondary
-  font-size: em(24px)
+  //font-family: font-family--secondary
+  //font-size: em(24px)
   font-weight: font-weight--light
+  
+h3, 
+h4,
+h5
+  color: palettes["gray"].light
+  text-transform: uppercase
+  font-weight: font-weight--bold
+
+// Form elements  
+input,
+textarea 
+  border: 0
+  display: block
+  outline: 0
+  
+  

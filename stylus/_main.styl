@@ -1,11 +1,15 @@
+// Main
+
+// Layout
+.container
+  max-width em(1000px)
+  margin 0 auto
+  padding 0 em(15px) em(50px) em(15px)
+
+// Icons
 .site-logo
   margin: 0 0 2em 0
   img-replace("mejorandolaicon.png", 77px, 77px, inline-block)
-
-.btn,
-.progbar,
-.tooltip
-  bg-colors(ui-colors)
   
 .icn-toggle 
   +p-el(before, 25px, 3px) // Include the mixin with a block of code with '+'' prefix
@@ -18,6 +22,12 @@
   height: 17px
   position: relative
   width: 25px
-
+  
+// Buttons
+.btn
+  bg-colors(ui-colors)
+  
+[class^="btn--"]
+  @extends $btn
 
 

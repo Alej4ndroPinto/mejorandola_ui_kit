@@ -11,6 +11,9 @@ font-weight--light = 300
 font-weight--normal = 400
 font-weight--bold = 700
 
+// Background color
+bg-color = #fbf9f9
+
 // Descriptive base colors
 scorpion = #565656
 gray = #909090
@@ -34,14 +37,19 @@ color-shadow = rgba(black, .2)
 // Color palette modifiers nested objects
 palettes = {
   gray: {
-    light: lighten(gray, 12%),
+    light: lighten(gray, 10%),
     base: gray,
-    dark: darken(gray, 8%)
+    dark: darken(gray, 20%)
   },
   atlantis: {
     light: lighten(atlantis, 10%),
     base: atlantis,
     dark: darken(atlantis, 20%)
+  },
+  ebony-clay: {
+    light: lighten(ebony-clay, 10%),
+    base: ebony-clay,
+    dark: darken(ebony-clay, 20%)
   }
 }
 
@@ -51,12 +59,20 @@ ui-colors = { //Hashes like js objects
   success: atlantis
   error: crimson,
   warning: sunglow,
-  info: scorpion
+  info: disco
 }
 
 // text
 base__font-size = 16px
 base__line = 24px
+
+// Transitions
+trns-duration = .3s
+
+// Border radius
+br--default = 4px
+br--riund = 50%
+
 
 // Path to assets
 path--rel = "../img"

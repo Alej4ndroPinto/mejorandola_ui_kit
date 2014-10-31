@@ -197,27 +197,67 @@ td,
 th {
   padding: 0;
 }
+a {
+  color: #97c941;
+  text-decoration: none;
+}
+a:hover {
+  color: #7aa62f;
+}
 body {
+  background: #fbf9f9;
+  color: #213338;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.5px;
+}
+button {
+  ouline: 0;
 }
 header {
   padding: 3em 0;
   text-align: center;
 }
 h1 {
-  color: #7aa62f;
-  font-size: 2.625em;
+  color: #737373;
   font-weight: 300;
   line-height: 1.095238095238095px;
   margin-bottom: 1.666666666666667em;
 }
 h2 {
   color: #909090;
-  font-family: sans-serif;
-  font-size: 1.5em;
   font-weight: 300;
+}
+h3,
+h4,
+h5 {
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+input,
+textarea {
+  border: 0;
+  display: block;
+  outline: 0;
+}
+[class^="btn--"] {
+  border-radius: 4px;
+  border: 0;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+[class^="btn--"]:hover {
+  opacity: 0.75;
+}
+.container {
+  max-width: 62.5em;
+  margin: 0 auto;
+  padding: 0 0.9375em 3.125em 0.9375em;
 }
 .site-logo {
   margin: 0 0 2em 0;
@@ -226,31 +266,6 @@ h2 {
   display: inline-block;
   height: 77px;
   width: 77px;
-}
-.btn--default,
-.progbar--default,
-.tooltip--default {
-  background: #08abee;
-}
-.btn--success,
-.progbar--success,
-.tooltip--success {
-  background: #97c941;
-}
-.btn--error,
-.progbar--error,
-.tooltip--error {
-  background: #d01452;
-}
-.btn--warning,
-.progbar--warning,
-.tooltip--warning {
-  background: #fcc33c;
-}
-.btn--info,
-.progbar--info,
-.tooltip--info {
-  background: #565656;
 }
 .icn-toggle {
   border-bottom: solid 3px #909090;
@@ -266,15 +281,30 @@ h2 {
   background: #909090;
   top: 7px;
 }
+.btn--default {
+  background: #08abee;
+}
+.btn--success {
+  background: #97c941;
+}
+.btn--error {
+  background: #d01452;
+}
+.btn--warning {
+  background: #fcc33c;
+}
+.btn--info {
+  background: #9e1f70;
+}
 .nav {
   font-size: 0;
-  margin-top: 1.25em;
   margin-bottom: 1.875em;
+  margin-top: 1.25em;
   padding: 0;
 }
 .nav__item {
   display: inline-block;
-  margin: 0.5px;
+  margin: 0 0.5px;
 }
 .nav__item:first-child a {
   border-radius: 4px 0 0 4px;
@@ -289,7 +319,7 @@ h2 {
   display: block;
   font-size: 14px;
   font-weight: 300;
-  padding: 1em 2.5em;
+  padding: 0.9em 2.5em;
   text-decoration: none;
   transition: all 0.3s ease;
 }
