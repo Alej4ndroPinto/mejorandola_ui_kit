@@ -1,0 +1,18 @@
+// Panels
+
+.panel
+  @extend $panel-default
+  +modifier(centered)
+    &
+      @extend $panel-default
+    text-align: center
+
+  +modifier(padded)
+    &
+      @extend $panel-padding
+
+    +modifier(centered)
+      &
+        @extend $panel-padding
+      text-align: center
+
