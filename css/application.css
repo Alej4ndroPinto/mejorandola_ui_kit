@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 .hidden {
   display: none !important;
 }
@@ -16,7 +17,56 @@
   display: block;
   position: absolute;
 }
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+a {
+  color: #97c941;
+  text-decoration: none;
+}
+a:hover {
+  color: #7aa62f;
+}
+blockquote {
+  border-left: 5px solid #9b9b9b;
+  color: #9b9b9b;
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-left: 5%;
+}
+body {
+  background: #fbf9f9;
+  color: #213338;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+button {
+  outline: 0;
+}
+header {
+  padding: 3em 0;
+  text-align: center;
+}
+h1 {
+  color: #737373;
+  font-weight: 300;
+  line-height: 1.095238095238095px;
+  margin-bottom: 1.666666666666667em;
+}
+h2 {
+  color: #909090;
+  font-weight: 300;
+}
+h3,
+h4,
+h5 {
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+input,
+textarea {
+  border: 0;
+  display: block;
+  outline: 0;
+}
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -197,55 +247,10 @@ td,
 th {
   padding: 0;
 }
-a {
-  color: #97c941;
-  text-decoration: none;
-}
-a:hover {
-  color: #7aa62f;
-}
-blockquote {
-  border-left: 5px solid #9b9b9b;
-  color: #9b9b9b;
-  font-size: 1.25em;
-  font-weight: 300;
-  padding-left: 5%;
-}
-body {
-  background: #fbf9f9;
-  color: #213338;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-}
-button {
-  outline: 0;
-}
-header {
-  padding: 3em 0;
-  text-align: center;
-}
-h1 {
-  color: #737373;
-  font-weight: 300;
-  line-height: 1.095238095238095px;
-  margin-bottom: 1.666666666666667em;
-}
-h2 {
-  color: #909090;
-  font-weight: 300;
-}
-h3,
-h4,
-h5 {
-  color: #9b9b9b;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-input,
-textarea {
-  border: 0;
-  display: block;
-  outline: 0;
+.container {
+  max-width: 62.5em;
+  margin: 0 auto;
+  padding: 0 0.9375em 3.125em 0.9375em;
 }
 [class^="btn--"],
 .form__button {
@@ -276,10 +281,42 @@ textarea {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.container {
-  max-width: 62.5em;
-  margin: 0 auto;
-  padding: 0 0.9375em 3.125em 0.9375em;
+.btn--default {
+  background: #08abee;
+  border-bottom: 3px solid #0689be;
+}
+.btn--success {
+  background: #97c941;
+  border-bottom: 3px solid #7aa62f;
+}
+.btn--error {
+  background: #d01452;
+  border-bottom: 3px solid #a61042;
+}
+.btn--warning {
+  background: #fcc33c;
+  border-bottom: 3px solid #f6ae04;
+}
+.btn--info {
+  background: #9e1f70;
+  border-bottom: 3px solid #7e195a;
+}
+.form__label {
+  color: #9b9b9b;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 0.625em;
+}
+.form__input {
+  border: 1px solid #213338;
+  border-radius: 4px;
+  margin-bottom: 0.75em;
+  padding: 6px 1%;
+  width: 97.8%;
+}
+.form__button {
+  border: 1px solid transparent;
+  width: 100%;
 }
 .site-logo {
   margin: 0 0 2em 0;
@@ -303,26 +340,6 @@ textarea {
   background: #909090;
   top: 7px;
 }
-.btn--default {
-  background: #08abee;
-  border-bottom: 3px solid #0689be;
-}
-.btn--success {
-  background: #97c941;
-  border-bottom: 3px solid #7aa62f;
-}
-.btn--error {
-  background: #d01452;
-  border-bottom: 3px solid #a61042;
-}
-.btn--warning {
-  background: #fcc33c;
-  border-bottom: 3px solid #f6ae04;
-}
-.btn--info {
-  background: #9e1f70;
-  border-bottom: 3px solid #7e195a;
-}
 .nav {
   font-size: 0;
   margin-bottom: 1.875em;
@@ -344,17 +361,7 @@ textarea {
 .nav__item--current a {
   background: #7aa62f;
 }
-.form__label {
-  color: #9b9b9b;
-  display: block;
-  font-weight: 300;
-  margin-bottom: 0.625em;
-  width: 100%;
-}
-.form__input {
-  border: 1px solid #213338;
-  border-radius: 4px;
-  margin-bottom: 0.75em;
-  padding: 6px 12px;
-  width: 100%;
+.navbar {
+  margin: 1rem 0 0 0;
+  position: relative;
 }
