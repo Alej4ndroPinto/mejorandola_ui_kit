@@ -1,0 +1,11 @@
+// Grid display
+
+.is-displayed-mobile 
+  +media-query('small')
+    display: block
+    
+    /.is-hidden-mobile // root selector won't (root context)
+      display: none
+
+  +media-query('medium')
+    display: none

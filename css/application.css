@@ -17,7 +17,7 @@
   position: absolute;
   width: 1px;
 }
-.icn-toggle:before {
+.icon--nav-toggle:before {
   content: '';
   display: block;
   position: absolute;
@@ -345,7 +345,7 @@ th {
     float: right;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1px) and (max-width: 768px) {
   [class^="grid__col--"] {
     margin: 0.75em 0;
   }
@@ -356,7 +356,7 @@ th {
 [class*="grid__column--"] > .grid {
   width: 100%;
 }
-@media screen and (min-width: large-bp) {
+@media screen and (min-width: 1100px) {
   .grid {
     max-width: 1050px;
   }
@@ -434,26 +434,32 @@ th {
   width: 100%;
 }
 .site-logo {
-  margin: 0 0 2em 0;
+  margin: 0;
   background: url("../img/mejorandolaicon.png") no-repeat;
   background-size: cover;
   display: inline-block;
   height: 77px;
   width: 77px;
 }
-.icn-toggle {
+@media screen and (min-width: 769px) {
+  .site-logo {
+    margin: 0 0 2em 0;
+  }
+}
+.icon--nav-toggle {
   border-bottom: solid 3px #909090;
   border-top: solid 3px #909090;
   display: inline-block;
   height: 17px;
   position: relative;
+  top: -52px;
   width: 25px;
 }
-.icn-toggle:before {
+.icon--nav-toggle:before {
   height: 3px;
   width: 25px;
   background: #909090;
-  top: 7px;
+  top: 4px;
 }
 .img--wrap {
   border: 1px solid #213338;
@@ -490,6 +496,32 @@ th {
   background: #7aa62f;
 }
 .navbar {
-  margin: 1rem 0 0 0;
   position: relative;
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    margin: 1rem 0 0 0;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .is-collapsed-mobile {
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    visibility: collapse;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .is-displayed-mobile {
+    display: block;
+  }
+  .is-hidden-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .is-displayed-mobile {
+    display: none;
+  }
 }

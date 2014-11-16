@@ -45,7 +45,7 @@ doubly(margin)
 // Media queries
 media-query(break-point)
   if break-point == 'small'
-    @media screen and (min-width: medium-bp)
+    @media screen and (min-width: small-bp) and (max-width: medium-bp)
       {block}
   else if break-point == 'medium'
     @media screen and (min-width: medium-bp + 1) 

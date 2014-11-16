@@ -10,11 +10,11 @@
     <a href="#" class="site-logo"><span class="srt">logo</span></a> 
 
     <nav class="navbar">
-      <span class="icn-toggle hidden">
+      <span class="icon--nav-toggle is-displayed-mobile" id="icon-menu">
         <strong class="srt">Toggle</strong> 
       </span>
 
-      <ul class="nav">
+      <ul class="nav is-collapsed-mobile" id="nav-container">
         <li class="nav__item nav__item--current"><a href="#">Link 1</a></li>
         <li class="nav__item"><a href="#">Link 2</a></li>
         <li class="nav__item"><a href="#">Link 3</a></li>
@@ -107,5 +107,13 @@
     </div>
   </div>
     
+<script>
+  var iconMenu = document.getElementById('icon-menu');
+  var navContainer = document.getElementById('nav-container');
+
+  iconMenu.addEventListener('click', function() {
+    navContainer.classList.toggle('is-collapsed-mobile');
+  })
+</script>
 </body>
 </html>
