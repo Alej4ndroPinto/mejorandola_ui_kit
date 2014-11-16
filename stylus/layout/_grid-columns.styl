@@ -1,6 +1,6 @@
 // Grid columns
 
-@media screen and (min-width: 769px)
+media-query('medium')
 
   for i in (1..grid-col-count)
     // Generate col modifier classes
@@ -19,7 +19,7 @@
       float: right
     
 
- @media screen and (min-width: 1px) and (max-width: 769px)
+media-query('small')
   // Column styles
   [class^="grid__col--"]
     margin: em(12px) 0

@@ -35,8 +35,24 @@ modifier(mod-name)
  &--{mod-name}
     {block}
   
-
+// Siblings selector
 doubly(margin)
   & + & 
     margin-left: unit(margin, '%')
     {block}
+
+
+// Media queries
+media-query(break-point)
+  if break-point == 'small'
+    @media screen and (min-width: medium-bp)
+      {block}
+  else if break-point == 'medium'
+    @media screen and (min-width: medium-bp + 1) 
+      {block}
+  else if break-ping == 'large'
+    @media screen and (min-width: large-bp)
+      {block}
+  else 
+    error('Invalid breakpoint: ', break-point)
+
