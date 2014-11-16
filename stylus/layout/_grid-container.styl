@@ -1,0 +1,12 @@
+// Grid container
+
+.grid
+  @extends $clearfix
+  @extend .centered 
+  width: 90%
+  max-width: 1000px
+
+  // Make nested grid 100%
+
+  [class*="grid__column--"] &
+    width: 100%

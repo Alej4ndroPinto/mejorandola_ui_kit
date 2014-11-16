@@ -5,3 +5,8 @@ if font-url--google is defined
 // Calculate em values
 em(target, context = base__font-size) 
   unit(target/context, 'em') // convert px a em
+
+// Grid system functions
+
+grid-context(grid-col-width, grid-col-count, grid-gutter-width) 
+  grid-context = (grid-col-width * grid-col-count) + (grid-gutter-width * (grid-col-count - 1))

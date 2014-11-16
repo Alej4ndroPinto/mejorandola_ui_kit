@@ -1,4 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+.grid:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 .hidden {
   display: none !important;
 }
@@ -16,6 +21,12 @@
   content: '';
   display: block;
   position: absolute;
+}
+.centered,
+.grid {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 a {
   color: #97c941;
@@ -262,6 +273,65 @@ th {
 .panel--padded,
 .panel--padded--centered {
   padding: 5em 0 2.125em 0;
+}
+@media screen and (min-width: 769px) {
+  .grid__col--1 {
+    width: 6.5%;
+  }
+  .grid__col--2 {
+    width: 15%;
+  }
+  .grid__col--3 {
+    width: 23.5%;
+  }
+  .grid__col--4 {
+    width: 32%;
+  }
+  .grid__col--5 {
+    width: 40.5%;
+  }
+  .grid__col--6 {
+    width: 49%;
+  }
+  .grid__col--7 {
+    width: 57.49999999999999%;
+  }
+  .grid__col--8 {
+    width: 66%;
+  }
+  .grid__col--9 {
+    width: 74.5%;
+  }
+  .grid__col--10 {
+    width: 83%;
+  }
+  .grid__col--11 {
+    width: 91.5%;
+  }
+  .grid__col--12 {
+    width: 100%;
+  }
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding: 0 10px;
+  }
+  [class^="grid__col--"] + [class^="grid__col--"] {
+    margin-left: 0.02px;
+  }
+  [class^="grid__col--"]:last-of-type {
+    float: right;
+  }
+}
+[class^="grid__col--"] {
+  margin: 0.75em 0;
+}
+.grid {
+  width: 90%;
+  max-width: 1000px;
+}
+[class*="grid__column--"] .grid {
+  width: 100%;
 }
 .panel--centered {
   text-align: center;

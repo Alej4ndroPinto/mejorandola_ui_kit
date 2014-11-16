@@ -1,0 +1,27 @@
+// Grid columns
+
+@media screen and (min-width: 769px)
+
+  for i in (1..grid-col-count)
+    // Generate col modifier classes
+    context = grid-context(grid-col-width, grid-col-count, grid-gutter-width) 
+    target = (grid-col-width * i) + (grid-gutter-width * (i - 1))
+
+    .grid__col--{i}
+      width: unit(target / context * 100, '%')
+      
+  [class^="grid__col--"]
+    doubly(grid-gutter-width/context)
+    float: left
+    min-height: 1px
+    padding: 0 10px
+    &:last-of-type
+      float: right
+    
+
+ @media screen and (min-width: 1px) and (max-width: 769px)
+  // Column styles
+[class^="grid__col--"]
+    margin: em(12px) 0
+
+    
