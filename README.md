@@ -11,7 +11,7 @@
   <li>SMACSS (Scalable and Modular Architecture for CSS)</li>
   <li>Stylus Grid System</li>
   <li>Media queries modulares</li>
-<ul>
+</ul>
 
 <p><a href="http://imontalvomiguel.github.io/mejorandola_ui_kit/">Demo</a></p>
 
