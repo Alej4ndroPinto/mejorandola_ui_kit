@@ -43,6 +43,7 @@ blockquote {
   color: #9b9b9b;
   font-size: 1.25em;
   font-weight: 300;
+  margin: 1rem 0;
   padding-left: 5%;
 }
 body {
@@ -70,7 +71,8 @@ h2 {
 }
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: #9b9b9b;
   text-transform: uppercase;
   font-weight: 700;
@@ -408,7 +410,7 @@ th {
   border-radius: 4px;
   margin-bottom: 0.75em;
   padding: 6px 1%;
-  width: 97.8%;
+  width: 100%;
 }
 .form__button {
   border: 1px solid transparent;
