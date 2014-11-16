@@ -387,7 +387,7 @@ th {
   display: inline-block;
   font-size: 0.875em;
   font-weight: 400;
-  margin: 0.5em;
+  margin: 0.5em 0;
   padding: 1rem 2rem 13px 2rem;
   text-transform: uppercase;
   transition: border-color 0.3s, opacity 0.3s;
@@ -398,6 +398,7 @@ th {
   .form__button,
 [class^="btn--"],
 .form__button {
+    margin: 0.5em;
     width: auto;
   }
 }
@@ -453,7 +454,6 @@ th {
   width: 100%;
 }
 .form__button {
-  border: 1px solid transparent;
   width: 100%;
 }
 .site-logo {
