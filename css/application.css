@@ -71,8 +71,6 @@ header {
 h1 {
   color: #737373;
   font-weight: 300;
-  line-height: 1.095238095238095px;
-  margin-bottom: 1.666666666666667em;
 }
 h2 {
   color: #909090;
@@ -94,6 +92,12 @@ textarea {
   border: 0;
   display: block;
   outline: 0;
+}
+footer {
+  border-top: 1px solid rgba(155,155,155,0.5);
+  font-size: 0.875em;
+  margin-top: 1rem;
+  padding: 1rem 0;
 }
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
