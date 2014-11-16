@@ -1,11 +1,17 @@
 // Paceholders
 
 $panel-default
-  padding: em(30px) 0 em(20px) 0
+  padding: em(16px) 0
+
+  +media-query("medium")
+    padding: em(30px) 0 em(20px) 0
 
 $panel-padding
-  padding: em(80px) 0 em(34px) 0
-
+  padding: em(16px) 0
+  
+  +media-query("medium")
+    padding: em(16px) 0
+    padding: em(80px) 0 em(34px) 0
 
 $col 
   float: left

@@ -273,11 +273,28 @@ th {
 }
 .panel,
 .panel--centered {
-  padding: 1.875em 0 1.25em 0;
+  padding: 1em 0;
+}
+@media screen and (min-width: 769px) {
+  .panel,
+  .panel--centered,
+.panel,
+.panel--centered {
+    padding: 1.875em 0 1.25em 0;
+  }
 }
 .panel--padded,
 .panel--padded--centered {
-  padding: 5em 0 2.125em 0;
+  padding: 1em 0;
+}
+@media screen and (min-width: 769px) {
+  .panel--padded,
+  .panel--padded--centered,
+.panel--padded,
+.panel--padded--centered {
+    padding: 1em 0;
+    padding: 5em 0 2.125em 0;
+  }
 }
 @media screen and (min-width: 769px) {
   .grid__col--1 {
@@ -328,7 +345,7 @@ th {
     float: right;
   }
 }
-@media screen and (min-width: 1px) and (max-width: 769px) {
+@media screen and (min-width: 768px) {
   [class^="grid__col--"] {
     margin: 0.75em 0;
   }
@@ -339,7 +356,7 @@ th {
 [class*="grid__column--"] > .grid {
   width: 100%;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: large-bp) {
   .grid {
     max-width: 1050px;
   }
@@ -453,7 +470,9 @@ th {
   font-size: 0;
   margin-bottom: 1.875em;
   margin-top: 1.25em;
+  overflow-x: auto;
   padding: 0;
+  white-space: nowrap;
 }
 .nav__item:first-child a {
   border-radius: 4px 0 0 4px;
