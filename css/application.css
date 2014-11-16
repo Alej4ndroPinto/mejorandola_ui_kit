@@ -454,6 +454,8 @@ th {
   width: 100%;
 }
 .form__button {
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 .site-logo {
