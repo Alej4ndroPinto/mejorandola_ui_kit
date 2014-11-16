@@ -323,14 +323,16 @@ th {
     float: right;
   }
 }
-[class^="grid__col--"] {
-  margin: 0.75em 0;
+@media screen and (min-width: 1px) and (max-width: 769px) {
+  [class^="grid__col--"] {
+    margin: 0.75em 0;
+  }
 }
 .grid {
   width: 90%;
   max-width: 1000px;
 }
-[class*="grid__column--"] .grid {
+[class*="grid__column--"] > .grid {
   width: 100%;
 }
 .panel--centered {
