@@ -4,10 +4,11 @@
   @extends $clearfix
   @extend .centered 
   width: 90%
-  max-width: 1000px
 
   // Make nested grid 100%
 
   [class*="grid__column--"] > & //reverse nesting
     width: 100%
 
+  @media (min-width: 1100px)
+    max-width: 1050px
