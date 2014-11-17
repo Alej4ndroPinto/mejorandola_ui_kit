@@ -1,0 +1,18 @@
+.progress
+  background: athens-gray
+  border-radius: 13px
+  height: em(20px)
+  margin: em(16px)
+  overflow: hidden
+  position: relative
+
+  +element(state)
+    &
+      @extends $progress-state
+    +set-background-modifier(ui-colors)
+      &
+        @extends $progress-state
+
+  +element(count)
+    &
+      @extends $progress-count

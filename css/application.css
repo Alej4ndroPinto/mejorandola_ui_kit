@@ -420,6 +420,32 @@ th {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+.progress__state,
+.progress__state--scorpion,
+.progress__state--gray,
+.progress__state--ebony-clay,
+.progress__state--atlantis,
+.progress__state--crimson,
+.progress__state--disco,
+.progress__state--sunglow,
+.progress__state--tuscany,
+.progress__state--cinnabar,
+.progress__state--lochmara,
+.progress__state--tree-poppy,
+.progress__state--cerulean {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.progress__count {
+  color: #fff;
+  display: block;
+  font-size: 0.6875em;
+  position: absolute;
+  right: 50%;
+  top: 2px;
+}
 .btn--scorpion {
   background: #565656;
   border-bottom: 3px solid #454545;
@@ -672,6 +698,50 @@ th {
 .icomoon-demo__item {
   display: inline-block;
   margin: 0 0 2em 2em;
+}
+.progress {
+  background: #e6e9ed;
+  border-radius: 13px;
+  height: 1.25em;
+  margin: 1em;
+  overflow: hidden;
+  position: relative;
+}
+.progress__state--scorpion {
+  background: #565656;
+}
+.progress__state--gray {
+  background: #909090;
+}
+.progress__state--ebony-clay {
+  background: #213338;
+}
+.progress__state--atlantis {
+  background: #97c941;
+}
+.progress__state--crimson {
+  background: #d01452;
+}
+.progress__state--disco {
+  background: #9e1f70;
+}
+.progress__state--sunglow {
+  background: #fcc33c;
+}
+.progress__state--tuscany {
+  background: #b16828;
+}
+.progress__state--cinnabar {
+  background: #e84c3d;
+}
+.progress__state--lochmara {
+  background: #008ed4;
+}
+.progress__state--tree-poppy {
+  background: #f5911d;
+}
+.progress__state--cerulean {
+  background: #08abee;
 }
 @media screen and (min-width: 1px) and (max-width: 768px) {
   .is-collapsed-mobile {
