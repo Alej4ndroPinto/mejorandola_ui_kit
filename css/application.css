@@ -420,19 +420,7 @@ th {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.progress__state,
-.progress__state--scorpion,
-.progress__state--gray,
-.progress__state--ebony-clay,
-.progress__state--atlantis,
-.progress__state--crimson,
-.progress__state--disco,
-.progress__state--sunglow,
-.progress__state--tuscany,
-.progress__state--cinnabar,
-.progress__state--lochmara,
-.progress__state--tree-poppy,
-.progress__state--cerulean {
+[class^="progress__state"] {
   left: 0;
   height: 100%;
   position: absolute;
