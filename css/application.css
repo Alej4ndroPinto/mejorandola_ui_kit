@@ -96,7 +96,7 @@ textarea {
 footer {
   border-top: 1px solid rgba(155,155,155,0.5);
   font-size: 0.875em;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem 0;
 }
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -752,4 +752,13 @@ th {
   .is-displayed-mobile {
     display: none;
   }
+}
+.theme-mejorandola .grid {
+  margin-bottom: 1px;
+  margin-top: 1em;
+}
+.theme-mejorandola [class*="grid__col--"] {
+  background: #e9e9e9;
+  padding: 1em 0;
+  text-align: center;
 }
