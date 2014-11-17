@@ -6,6 +6,12 @@ bg-colors(hash)
       background: value
       border-bottom: 3px solid darken(value, 20%)
 
+set-background-modifier(hash)
+  for key, value in hash 
+    &--{key}
+      background: value
+      {block}
+
 img-replace(img, w, h, disp = block)
   background: url(path--rel + "/" + img) no-repeat 
   background-size: cover
