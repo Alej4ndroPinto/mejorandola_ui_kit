@@ -19,6 +19,7 @@
         <li class="nav__item"><a href="#buttons">Buttons</a></li>
         <li class="nav__item"><a href="#forms">Forms</a></li>
         <li class="nav__item"><a href="#media">Media</a></li>
+        <li class="nav__item"><a href="#icon-fonts">Icon fonts</a></li>
       </ul>
     </nav>
   </header>
@@ -120,12 +121,18 @@
   </div>
 
   <div class="grid">
-    <div class="grid__col--12 txt-center">
-      <a href="#" class="btn--default">Button Default</a>
-      <a href="#" class="btn--success">Button Success</a>
-      <a href="#" class="btn--error">Button error</a>
-      <a href="#" class="btn--warning">Button Warning</a>
-      <a href="#" class="btn--info ">Button Info</a>
+    <div class="grid__col--12">
+      <a href="#" class="btn--scorpion">Button scorpion</a>
+      <a href="#" class="btn--gray">Button gray</a>
+      <a href="#" class="btn--ebony-clay">Button ebony clay</a>
+      <a href="#" class="btn--atlantis">Button atlantis</a>
+      <a href="#" class="btn--crimson ">Button crimson</a>
+      <a href="#" class="btn--disco">Button disco</a>
+      <a href="#" class="btn--sunglow">Button sunglow</a>
+      <a href="#" class="btn--tuscany">Button tuscany</a>
+      <a href="#" class="btn--lochmara">Button lochmara</a>
+      <a href="#" class="btn--tree-poppy">Button tree poppy</a>
+      <a href="#" class="btn--cerulean">Button cerulean</a>
     </div>
   </div>
   
@@ -134,20 +141,29 @@
   </div>
 
   <div class="grid">
-    <div class="grid__col--12">
-      <form class="form" action="#">
-        <label class="form__label srt" for="name">Name:</label>
-        <input class="form__input" type="text" id="name" placeholder="Name">
-
-        <label class="form__label srt" for="email">Email:</label>
-        <input class="form__input" type="email" id="email" placeholder="email@domain.com">
-
-        <label class="form__label srt" for="msg">Messae:</label>
-        <textarea class="form__input" name="msg" id="msg" rows="10" placeholder="Message"></textarea>
-
-        <input class="form__button btn--warning" type="submit" value="Enviar">
-      </form>
-    </div>
+    <form class="form" action="#">
+      <div class="grid">
+        <div class="grid__col--6">
+          <label class="form__label srt" for="name">Name:</label>
+          <input class="form__input" type="text" id="name" placeholder="Name">
+        </div>
+        <div class="grid__col--6">
+          <label class="form__label srt" for="email">Email:</label>
+          <input class="form__input" type="email" id="email" placeholder="email@domain.com">
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--12">
+          <label class="form__label srt" for="msg">Messae:</label>
+          <textarea class="form__input" name="msg" id="msg" rows="10" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--12">
+          <input class="form__button btn--crimson" type="submit" value="Enviar">
+        </div>
+      </div>
+    </form>
   </div>
 
   <div class="grid" id="media">
@@ -164,8 +180,46 @@
       <img class="img--avatar" src="http://placehold.it/135x135/E9E9E9/4D4E4F" alt="">
     </div>
   </div>
+
+  <div id="icon-fonts" class="grid">
+    <h4>Icon fonts</h4>
+  </div>
+  <div class="grid icomoon-demo">
+    <span class="icomoon-demo__item icon--calc"></span>
+    <span class="icomoon-demo__item icon--cloud"></span>
+    <span class="icomoon-demo__item icon--comments"></span>
+    <span class="icomoon-demo__item icon--config"></span>
+    <span class="icomoon-demo__item icon--down"></span>
+    <span class="icomoon-demo__item icon--dropbox"></span>
+    <span class="icomoon-demo__item icon--facebook"></span>
+    <span class="icomoon-demo__item icon--full"></span>
+    <span class="icomoon-demo__item icon--in"></span>
+    <span class="icomoon-demo__item icon--left"></span>
+    <span class="icomoon-demo__item icon--link"></span>
+    <span class="icomoon-demo__item icon--list-menu"></span>
+    <span class="icomoon-demo__item icon--next"></span>
+    <span class="icomoon-demo__item icon--pause"></span>
+    <span class="icomoon-demo__item icon--phone"></span>
+    <span class="icomoon-demo__item icon--play"></span>
+    <span class="icomoon-demo__item icon--plus"></span>
+    <span class="icomoon-demo__item icon--prev"></span>
+    <span class="icomoon-demo__item icon--right"></span>
+    <span class="icomoon-demo__item icon--search"></span>
+    <span class="icomoon-demo__item icon--square-menu"></span>
+    <span class="icomoon-demo__item icon--star"></span>
+    <span class="icomoon-demo__item icon--trash"></span>
+    <span class="icomoon-demo__item icon--twitter"></span>
+    <span class="icomoon-demo__item icon--up"></span>
+    <span class="icomoon-demo__item icon--user"></span>
+    <span class="icomoon-demo__item icon--video"></span>
+    <span class="icomoon-demo__item icon--web"></span>
+    <span class="icomoon-demo__item icon--write"></span>
+    <span class="icomoon-demo__item icon--youtube"></span>
+  </div>
+
+
   <footer class="grid txt-center">
-  <p>Inspired in <a href="https://mejorando.la/kit-ui">UI Kit Mejorando.la</a></p>
+    <p>Inspired in <a href="https://mejorando.la/kit-ui">UI Kit Mejorando.la</a></p>
   </footer>
     
 <script>
