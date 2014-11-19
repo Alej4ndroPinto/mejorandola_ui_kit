@@ -7,11 +7,15 @@
     margin-bottom: em(10px)
 
   +element(input)
-    border: 1px solid palettes["ebony-clay"].base
-    border-radius: br--default
-    margin-bottom: em(12px)
-    padding: 6px 1%
-    width: 100%
+    &
+      @extends $form-item
+    border-color: palettes["ebony-clay"].base
+
+    +modifier('gray')
+      &
+        @extends $form-item
+      background: athens-gray
+      border-color: athens-gray
 
   +element(button)
     &
