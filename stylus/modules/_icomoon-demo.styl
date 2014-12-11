@@ -2,7 +2,10 @@
   font-size: em(24px)
 
   +element(item)
-    display: inline-block
-    margin: 0 0 em(32px) em(32px)
+    &
+      @extend $icomoon-demo-item
 
+
+  [class^="icon--"]
+    @extends $icomoon-demo-item
 

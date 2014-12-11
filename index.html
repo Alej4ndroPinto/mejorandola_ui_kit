@@ -15,8 +15,13 @@
         <strong class="srt">Toggle</strong> 
       </span>
 
+      <a class="nav-toggle" id="nav-toggle" href="#">
+        <span class="nav-toggle__hamburger"></span>
+      </a>
+
+
       <ul class="nav is-collapsed-mobile" id="nav-container">
-        <li class="nav__item"><a href="#typography">Typography</a></li>
+        <li class="nav__item--current"><a href="#typography">Typography</a></li>
         <li class="nav__item"><a href="#buttons">Buttons</a></li>
         <li class="nav__item"><a href="#forms">Forms</a></li>
         <li class="nav__item"><a href="#media">Media</a></li>
@@ -219,36 +224,36 @@
     <h4>Icon fonts</h4>
   </div>
   <div class="grid icomoon-demo">
-    <span class="icomoon-demo__item icon--calc"></span>
-    <span class="icomoon-demo__item icon--cloud"></span>
-    <span class="icomoon-demo__item icon--comments"></span>
-    <span class="icomoon-demo__item icon--config"></span>
-    <span class="icomoon-demo__item icon--down"></span>
-    <span class="icomoon-demo__item icon--dropbox"></span>
-    <span class="icomoon-demo__item icon--facebook"></span>
-    <span class="icomoon-demo__item icon--full"></span>
-    <span class="icomoon-demo__item icon--in"></span>
-    <span class="icomoon-demo__item icon--left"></span>
-    <span class="icomoon-demo__item icon--link"></span>
-    <span class="icomoon-demo__item icon--list-menu"></span>
-    <span class="icomoon-demo__item icon--next"></span>
-    <span class="icomoon-demo__item icon--pause"></span>
-    <span class="icomoon-demo__item icon--phone"></span>
-    <span class="icomoon-demo__item icon--play"></span>
-    <span class="icomoon-demo__item icon--plus"></span>
-    <span class="icomoon-demo__item icon--prev"></span>
-    <span class="icomoon-demo__item icon--right"></span>
-    <span class="icomoon-demo__item icon--search"></span>
-    <span class="icomoon-demo__item icon--square-menu"></span>
-    <span class="icomoon-demo__item icon--star"></span>
-    <span class="icomoon-demo__item icon--trash"></span>
-    <span class="icomoon-demo__item icon--twitter"></span>
-    <span class="icomoon-demo__item icon--up"></span>
-    <span class="icomoon-demo__item icon--user"></span>
-    <span class="icomoon-demo__item icon--video"></span>
-    <span class="icomoon-demo__item icon--web"></span>
-    <span class="icomoon-demo__item icon--write"></span>
-    <span class="icomoon-demo__item icon--youtube"></span>
+    <span class="icon--calc"></span>
+    <span class="icon--cloud"></span>
+    <span class="icon--comments"></span>
+    <span class="icon--config"></span>
+    <span class="icon--down"></span>
+    <span class="icon--dropbox"></span>
+    <span class="icon--facebook"></span>
+    <span class="icon--full"></span>
+    <span class="icon--in"></span>
+    <span class="icon--left"></span>
+    <span class="icon--link"></span>
+    <span class="icon--list-menu"></span>
+    <span class="icon--next"></span>
+    <span class="icon--pause"></span>
+    <span class="icon--phone"></span>
+    <span class="icon--play"></span>
+    <span class="icon--plus"></span>
+    <span class="icon--prev"></span>
+    <span class="icon--right"></span>
+    <span class="icon--search"></span>
+    <span class="icon--square-menu"></span>
+    <span class="icon--star"></span>
+    <span class="icon--trash"></span>
+    <span class="icon--twitter"></span>
+    <span class="icon--up"></span>
+    <span class="icon--user"></span>
+    <span class="icon--video"></span>
+    <span class="icon--web"></span>
+    <span class="icon--write"></span>
+    <span class="icon--youtube"></span>
   </div>
 
   <div class="grid" id="progress-bars">
@@ -420,11 +425,14 @@
   </footer>
     
 <script>
-  var iconMenu = document.getElementById('icon-menu');
+  var iconMenu = document.getElementById('nav-toggle');
   var navContainer = document.getElementById('nav-container');
+  var hamburger = iconMenu.childNodes[1];
 
   iconMenu.addEventListener('click', function() {
     navContainer.classList.toggle('is-collapsed-mobile');
+    hamburger.classList.toggle('nav-toggle__hamburger');
+    hamburger.classList.toggle('nav-toggle__hamburger--close');
   })
 </script>
 </body>

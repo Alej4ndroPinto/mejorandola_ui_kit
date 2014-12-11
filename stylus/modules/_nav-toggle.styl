@@ -1,0 +1,43 @@
+.nav-toggle
+  display: block
+  height: 50px
+  line-height: 50px
+  position: fixed
+  right: em(25px)
+  text-align: center
+  top: em(26px)
+  width: 60px
+  z-index: 100
+
+  +element(hamburger)
+    &
+      @extends $hamburger-menu
+
+    &:after
+    &:before
+      @extend $pseudo-elements-hamburger
+
+    &:after
+      top: -12px
+
+    &:before
+      bottom: -12px
+
+    +modifier(close)
+      &
+        @extends $hamburger-menu
+      background: transparent
+
+      &:after
+      &:before
+        @extend $pseudo-elements-hamburger 
+        background: palettes['crimson'].base
+
+      &:after
+        top: 0
+        transform: rotate(45deg)
+
+      &:before
+        bottom: 0
+        transform: rotate(-45deg)
+  
