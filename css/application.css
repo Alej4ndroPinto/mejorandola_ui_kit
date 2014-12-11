@@ -407,11 +407,13 @@ th {
   border-color: transparent;
   opacity: 0.75;
 }
-.nav__item {
+.nav__item,
+.nav__item--current {
   display: inline-block;
   margin: 0 0.5px;
 }
-.nav__item a {
+.nav__item a,
+.nav__item--current a {
   color: #fff;
   display: block;
   font-size: 14px;
@@ -433,6 +435,44 @@ th {
   position: absolute;
   right: 50%;
   top: 2px;
+}
+.form__input,
+.form__input--gray {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 0.75em;
+  padding: 6px 1%;
+  width: 100%;
+}
+.icomoon-demo__item,
+.icomoon-demo [class^="icon--"] {
+  display: inline-block;
+  margin: 0 0 2em 2em;
+}
+.nav-toggle__hamburger,
+.nav-toggle__hamburger--close {
+  border-radius: 4px;
+  display: inline-block;
+  height: 5px;
+  background: #909090;
+  position: relative;
+  transition: background 0.3s ease;
+  width: 40px;
+}
+.nav-toggle__hamburger:after,
+.nav-toggle__hamburger:before,
+.nav-toggle__hamburger--close:after,
+.nav-toggle__hamburger--close:before {
+  background: #909090;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+  width: 40px;
 }
 .btn--scorpion {
   background: #565656;
@@ -489,11 +529,11 @@ th {
   margin-bottom: 0.625em;
 }
 .form__input {
-  border: 1px solid #213338;
-  border-radius: 4px;
-  margin-bottom: 0.75em;
-  padding: 6px 1%;
-  width: 100%;
+  border-color: #213338;
+}
+.form__input--gray {
+  background: #e6e9ed;
+  border-color: #e6e9ed;
 }
 .form__button {
   margin-left: 0;
@@ -561,6 +601,12 @@ th {
 }
 .nav__item--current a {
   background: #7aa62f;
+}
+.nav li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.nav li:last-child a {
+  border-radius: 0 4px 4px 0;
 }
 .navbar {
   position: relative;
@@ -683,10 +729,6 @@ th {
 .icomoon-demo {
   font-size: 1.5em;
 }
-.icomoon-demo__item {
-  display: inline-block;
-  margin: 0 0 2em 2em;
-}
 .progress {
   background: #e6e9ed;
   border-radius: 13px;
@@ -730,6 +772,38 @@ th {
 }
 .progress__state--cerulean {
   background: #08abee;
+}
+.nav-toggle {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  right: 1.5625em;
+  text-align: center;
+  top: 1.625em;
+  width: 60px;
+  z-index: 100;
+}
+.nav-toggle__hamburger:after {
+  top: -12px;
+}
+.nav-toggle__hamburger:before {
+  bottom: -12px;
+}
+.nav-toggle__hamburger--close {
+  background: transparent;
+}
+.nav-toggle__hamburger--close:after,
+.nav-toggle__hamburger--close:before {
+  background: #d01452;
+}
+.nav-toggle__hamburger--close:after {
+  top: 0;
+  transform: rotate(45deg);
+}
+.nav-toggle__hamburger--close:before {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
 @media screen and (min-width: 1px) and (max-width: 768px) {
   .is-collapsed-mobile {
