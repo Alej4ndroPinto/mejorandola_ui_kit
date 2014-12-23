@@ -301,7 +301,7 @@ th {
   .panel--centered,
 .panel,
 .panel--centered {
-    padding: 1.875em 0 1.25em 0;
+    padding: 2em 0;
   }
 }
 .panel--padded,
@@ -424,11 +424,23 @@ th {
 }
 .nav__item,
 .nav__item--current {
-  display: inline-block;
-  margin: 0 0.5px;
+  border-bottom: 1px solid #a1ce54;
+  list-style: none;
+}
+@media screen and (min-width: 769px) {
+  .nav__item,
+  .nav__item--current,
+.nav__item,
+.nav__item--current {
+    border-bottom: none;
+    display: inline-block;
+    margin: 0 0.5px;
+    vertical-align: bottom;
+  }
 }
 .nav__item a,
-.nav__item--current a {
+.nav__item--current a,
+.nav .current_page_item a {
   color: #fff;
   display: block;
   font-size: 14px;
@@ -472,12 +484,14 @@ th {
 }
 .nav-toggle__hamburger,
 .nav-toggle__hamburger--close {
+  background: rgba(251,249,249,0.5);
   -webkit-border-radius: 4px;
   border-radius: 4px;
   display: inline-block;
   height: 5px;
   background: #909090;
   position: relative;
+  top: -3.5px;
   -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
   -o-transition: background 0.3s ease;
@@ -571,7 +585,7 @@ th {
   width: 100%;
 }
 .site-logo {
-  margin: 0;
+  margin: 0 0 0.7rem 0;
   background: url("../img/mejorandolaicon.png") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -582,7 +596,7 @@ th {
 }
 @media screen and (min-width: 769px) {
   .site-logo {
-    margin: 0 0 2em 0;
+    margin: 0 0 1.5em 0;
   }
 }
 .icon--nav-toggle {
@@ -616,17 +630,22 @@ th {
   font-size: 0;
   margin-bottom: 1.875em;
   margin-top: 1.25em;
-  overflow-x: auto;
   padding: 0;
-  white-space: nowrap;
 }
-.nav__item:first-child a {
-  -webkit-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
+@media screen and (min-width: 769px) {
+  .nav {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
-.nav__item:last-child a {
-  -webkit-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
+@media screen and (min-width: 1100px) {
+  .nav {
+    overflow-x: initial;
+    white-space: initial;
+  }
+}
+.nav__item:last-child {
+  border-bottom: none;
 }
 .nav__item a {
   background: #97c941;
@@ -638,19 +657,35 @@ th {
   background: #7aa62f;
 }
 .nav li:first-child a {
-  -webkit-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+@media screen and (min-width: 769px) {
+  .nav li:first-child a {
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+  }
 }
 .nav li:last-child a {
-  -webkit-border-radius: 0 4px 4px 0;
-  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+@media screen and (min-width: 769px) {
+  .nav li:last-child a {
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+  }
+}
+.nav .current_page_item a {
+  background: #7aa62f;
 }
 .navbar {
+  max-height: 999px;
   position: relative;
 }
 @media screen and (min-width: 769px) {
   .navbar {
-    margin: 1rem 0 0 0;
+    margin: 0rem 0 0 0;
   }
 }
 @font-face {
@@ -815,10 +850,10 @@ th {
   display: block;
   height: 50px;
   line-height: 50px;
-  position: fixed;
-  right: 1.5625em;
+  position: absolute;
+  right: 1rem;
   text-align: center;
-  top: 1.625em;
+  top: 1.8125em;
   width: 60px;
   z-index: 100;
 }
@@ -853,11 +888,8 @@ th {
 }
 @media screen and (min-width: 1px) and (max-width: 768px) {
   .is-collapsed-mobile {
-    height: 0;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    visibility: collapse;
+    max-height: 0;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1px) and (max-width: 768px) {

@@ -10,18 +10,16 @@
   <header class="grid panel--centered">
     <a href="#" class="site-logo"><span class="srt">Mejorando.la UI Kit</span></a> 
 
-    <nav class="navbar">
-      <span class="icon--nav-toggle is-displayed-mobile" id="icon-menu">
-        <strong class="srt">Toggle</strong> 
-      </span>
+    <a class="nav-toggle is-displayed-mobile" id="nav-toggle" href="#">
+      <span class="nav-toggle__hamburger"></span>
+    </a>
 
-      <a class="nav-toggle" id="nav-toggle" href="#">
-        <span class="nav-toggle__hamburger"></span>
-      </a>
+    <nav class="navbar is-collapsed-mobile" id="nav-container">
 
+      
 
-      <ul class="nav is-collapsed-mobile" id="nav-container">
-        <li class="nav__item--current"><a href="#typography">Typography</a></li>
+      <ul class="nav" >
+        <li class="nav__item current_page_item"><a href="#typography">Typography</a></li>
         <li class="nav__item"><a href="#buttons">Buttons</a></li>
         <li class="nav__item"><a href="#forms">Forms</a></li>
         <li class="nav__item"><a href="#media">Media</a></li>

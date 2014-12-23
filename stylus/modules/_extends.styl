@@ -24,8 +24,14 @@ $btn
 
 // Nav items
 $nav-item-display
-  display: inline-block
-  margin: 0 .5px 
+  border-bottom: 1px solid palettes['atlantis'].light
+  list-style: none
+
+  +media-query(medium)
+    border-bottom: none
+    display: inline-block
+    margin: 0 .5px 
+    vertical-align: bottom
 
 $nav-item-link
   color: white
@@ -35,7 +41,7 @@ $nav-item-link
   padding: .9em 2.5em
   text-decoration: none
   transition all trns-duration ease
-  
+
 // Progressbar
 $progress-state
   left: 0
@@ -69,11 +75,13 @@ $icomoon-demo-item
 
 // hamburger menu pseudo elements
 $hamburger-menu
+  background: rgba(hint-of-red, 0.5)
   border-radius: 4px
   display: inline-block
   height: 5px
   background: palettes['gray'].base
   position: relative
+  top: -3.5px
   transition: background .3s ease
   width: 40px
 
